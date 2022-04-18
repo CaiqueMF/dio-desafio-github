@@ -1,0 +1,15 @@
+html5
+elemento é a base do html
+começa com tag de abertura
+pode ter atributo
+conteudo
+tag de fechamento 
+
+estrutura básica do html
+doctype
+html
+	head
+	body
+
+semântica
+section, header, article, aside, footer, h1-h6
