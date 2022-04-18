@@ -1,0 +1,152 @@
+primeiro dominio da internet:
+symbolics.com
+o primeiro blog criado:
+Open Diary
+primeira compra feita online:
+a primeira transação com pagamento online foi o cd de Sting(Ten summoner's tales)
+site mais antigo em atividade:
+sumbolics.com
+termos online:
+faltou mencionar vtuber
+
+=======
+definição de rede:
+backbone
+provedores de acesso
+
+=====
+caminho da web
+url (www) para DNS para ip para classes de rede
+=======
+tcp e ip
+tcp protocolo de controle de tranmissão 
+ip protocole de internet
+
+comunicação entre dispositivos
+- física
+- rede
+- transporte
+- aplicação
+
+tcp x udp
+
+**udp
+-rápida
+-não confiável
+-não há retorno (alegoria com carro do ovo)
+-livestream
+**tcp
+-voltado à conexão
+-handshake
+-integridade, ordem dos dados
+-aplicativo de mensagens de texto
+
+portas
+(má tradução de port)
+por onde os dados sairão e chegarão
+
+modem (modulator-domodulator)
+converte um tipo de dado e destransforma
+
+roteador
+distribui internet para um ou mais dispositivos
+costumava distribuir os dados para todos os dispositivos conectados
+
+switch
+distribui para somente o dispositivo que pediu
+
+a porta padrão para smtp no google é 465
+porta padrão pop3 do google é 995
+
+as portas padrões do sql são
+tcp:
+1433, 4022, 135, 1434
+UDP:
+1434
+
+a porta padrão do apache é:
+443
+
+========
+dados móveis
+sms (short message service)
+mms(mensagem multimídia)
+1G=10Kbps
+2G=97 kbps
+GPRS (2,5G)
+EDGE (2.75 G) =128-236 Kbps
+3G = 7Mbps
+4G = 22,1 Mbps
+5G = 10Gbps
+
+wi-fi
+IEEE
+802.11 2.4GHz 2Mbps
+802.11a 5GHz 54 Mbps
+802.11b 2,4 Ghz 11 Mbps (menos interferência)
+802.11g 2.4GHz 54 Mbps
+802.11n 2,4/5 GHz 150-600Mbps
+
+segurança na internet
+WEP: chaves de 64 e de 128 bits
+WPA chaves trocadas peridiocamente
+WPA2 AES 802.11i
+	+ segurança
+	+ processamento
+
+bluetooth
+conexão ponta-a-ponta sem necessidade de interenet
+
+=======
+browser
+programa capaz de interpretar LP e transforma em algo compreensível por um humano
+sabe indentificar várias LP e linguagens de marcação e multimedia
+cache e cookies
+cache, download prévio de alguns elementos do computador
+cookies, rastro deixado no computador
+página estática x página dinâmica
+
+site
+página da interenet em geral
+HTML está caindo em desuso
+D/HTML
+
+aplicativo
+é um software que é executado no navegador
+hoje em dia há uma pequena diferença entre site e aplicativo 
+
+E-commerce
+site de compra e venda com sistema de pagamento, as vezes sendo este exteerior ao site
+
+web-server
+servidor estático ou dinâmico
+web-service
+
+===========
+Stacks
+pilhas de tecnologias é o conjunto necessário para execultar um programa, LP, ambientes e ferramentas, capacidade e limitação
+os desenvolvedores precisam saber as limitações e capacidades das ferramentes e ambientes presentes
+estratégias de negócio
+
+front-end
+aparencia direta de algum software, site, aplicativo, etc
+geralmente parte visual e parte de programação
+UI, UX, interface
+
+back-end
+funcionamento, parte não necessariamente visual do funcionamento , sevidores, bancos de dados, entre outros
+
+full stack
+profissional capaz de trabalhar em ambas as áreas
+
+==========
+principais LPs
+hitml, css, javascript (jquery, ajax), pho, .net, asp, java, ruby (on rails), python, perl, c/c++/C#
+termos comuns
+404, algoritmo, alt, api, aplicação, back-end, biblioteca/dll, bootstrap, brakpoints, browser/nabegador, bug, cache, código, controle de versão, cookies
+debug, deploy, design adaptativo/responsivo, dns, documentação, domínio, dpi, editor de texto, estrutura de dados, favicon, fontes, framework, front-end, ftp, full-stack, github/svn/cvs
+https(s), ip, linguagem, meta tags, método ágil, mobile, mvc, mvp, mysql, pixel, resolução, servidor, sistema operacional/SO, soluç~]ao, ssl, UI, ux, versão, wyswyg
+
+=======
+pequena página em php/java
+*servidor web
