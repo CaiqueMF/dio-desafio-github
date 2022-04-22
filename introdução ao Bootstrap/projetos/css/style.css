@@ -1,0 +1,40 @@
+body {
+    font: 20px, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #9CD5E6;
+}
+#logo-maresol {
+max-width: 50px;
+height: auto;
+border-radius: 50%;
+}
+.padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.container img {
+    max-height: 400px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+}
+#noticias {
+    background-color: #B4CFB0;
+}
+#membros {
+    background-color: #94B49F;
+}
+#contatos {
+    background-color: #789395;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 1px;
+}
+nav a {
+    font-weight: bold;
+    font-size: 18px;
+}

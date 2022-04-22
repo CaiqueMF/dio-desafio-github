@@ -1,0 +1,10 @@
+bootstrap é framework para desenvolvimento de sites responsivos
+muito prático
+um dos frameworks mais utilizados
+separações do bootstrap
+container
+	row
+		col
+as colunas do bootstrap possuem 12 partes
+arquivos minificados são aqueles que abandonam a identação em troca de do peso do arquivo
+seus conteúdos são iguais
