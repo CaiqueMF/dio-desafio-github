@@ -1,0 +1,38 @@
+===Map
+estrutura map
+entradas formato chave e valor
+pode ser itegrado no formato for of
+declarado usando "new map"
+
+métodos do mpa
+
+para adicionar elementos -> .set
+(seta chave e valor, "map.set('apple', 'fruit')" seta o valor fruit pra chave apple)
+
+para checar o valor referente a chave procurada -> .get
+(retorna o valor da chave procurada "map.get(apple)" retorna fruit)
+
+para deletar um par de chaves e valor -> .delete
+(retorna true se a ação foi bem sucedida "map.delete("apple")" destroi par no map)
+
+chaves no map comparadas as chaves no objeto podem ser de qualquer tipo enquanto
+as chaves no objeto só podem ser string
+map possui propriedade length
+maps são mais fáceis de iterar
+o map é utilizado quando o valor das chaves é desconhecido
+os valore do map são do mesmo tipo
+
+==set
+estrutura de set
+a estrutura de um set só guarda valores únicos
+para selecionar/checar/deletar valores no set se utiliza respoectivamente
+set.add(x)
+set.has(x)
+set.delete(x)
+
+para gerar um novo set se utiliza
+new set()
+
+diferença entre um set e um array
+o tamanho de um set é dado pela propriedade size
+o set não possui os métodos map, filter, reduce, etc
