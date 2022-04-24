@@ -1,6 +1,6 @@
 :root{
-    --vermelho:#E50914;
-    --preta:#141414;
+    --vermelho:#BF2316;
+    --preta:#1F191B;
 }
 * {
     margin: 0;
@@ -10,7 +10,7 @@
 body {
     background: var(--preta);
     font-family:'Times New Roman', Times, serif;
-    color: white;
+    color: #F0E7BE;
 }
 header .container {
     display: flex;
@@ -26,11 +26,11 @@ header .logo {
 }
 header nav a {
     text-decoration: none;
-    color: #AAA;
+    color: #CFBF9D;
     margin-right: 10px;
 }
 header nav a:hover{
-    color: #fff;
+    color: #EBAE5E;
 }
 /*filme principal*/
 .filme-principal {
@@ -53,9 +53,9 @@ header nav a:hover{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .botao {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(75, 60, 29,0.5);
     border: none;
-    color: white;
+    color: #F0E7BE;
     padding: 15px 30px;
     margin-right: 12px;
     font-size: 12px;
@@ -64,8 +64,8 @@ header nav a:hover{
     transition: .3s ease all;
 }
 .botao:hover {
-    background-color: white;
-    color: black;
+    background-color: #F0E7BE;
+    color: #1C1B17;
 }
 .botao i {
     margin-right: 8px;
