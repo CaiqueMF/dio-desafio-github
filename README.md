@@ -4,6 +4,7 @@ Projeto desafio acerca de Git/GitHub
 - introdução ao curso de HTML
 - primeiros passos de desenvolvimento web
 - introdução ao bootstrap
+- desafio netflix
 
 ## Links úteis
 [informação relevante ao projeto](https://youtu.be/dQw4w9WgXcQ)
