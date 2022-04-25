@@ -1,0 +1,38 @@
+=tipos de erro
+error do ECMAScript e DOMException
+erro que ocorre em tempo de execução 
+composição do ECMAScript
+	mensagem 
+	nome
+	linha
+	call stack
+
+DOMException
+error relacionados ao codico rodado na página da web
+erros referentes a estutura da página da web
+
+=tratamento de erros
+trhow e return
+try/catch
+
+throw
+throw retorna erro devidametne como erro
+return "erro" é soemnte uma mensagem 
+throw "erro" é uma mensagem de erro
+
+try/catch
+try verifica o erro
+catch interaje da forma esperada caso haja um erro
+
+finally
+independendo de erro ou não o finally no final de um conjunto try/catch vai ser exercudato
+
+=objeto error
+anatomia do error
+erro aceita os paramentros mensagem, nome do arquivo e número da linha
+(message, filename, lineNumber)
+
+inicializando um erro
+const Erro_nome = new Error('mensagem do erro')
+Erro_nome.name = 'nome do erro'
+
