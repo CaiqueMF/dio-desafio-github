@@ -1,0 +1,34 @@
+=paradigmas
+imperativo, declarativo
+orientação a objetos é um paradigma imperativo
+exemplo de paradigma declarativo seria um banco de dados sql ou programação funcional
+
+na programação em objetos os programas são objetos que possuem diversas qualidades
+/propriedades
+pilares:
+	herança
+	polimorfismo
+	ecapsulamento
+	abstração
+=abstração
+simplificar aspectos de um certo contexto complexo
+
+=herança
+o objeto filho herda propriedades e métodos do objeto pai
+
+=encapsulamento
+cada classe tem propriedade e métodos independentes do restante do código
+
+-polimorfismo
+possuir a mesma classe pai, mas se comporta de forma diferente
+
+==oojs object oriented javascript/javascript orientado de objeto
+= protótipos
+esqueleto de todos os objetos
+
+=classes
+javascript não possui classes nativamente e todas as classes são objetos
+e a herança se dá por protótipos
+-construtor, atribui valores a certos valores dentro da classe
+getter e setter
+super, manda parametro para a função pai
