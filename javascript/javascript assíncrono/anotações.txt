@@ -1,0 +1,57 @@
+=assincronicidade
+que não ocorre ao mesmo tempo
+javascript normalmente roda de maneira síncrona
+
+=promises
+objeto de processamento assíncrono 
+inicialmente seu valor é desconhecido, podendo então ser resolvido ou rejeitado
+	estados: pending, fulfilled, rejected
+estrutura de uma promisse
+
+const mypromise = new Promise((resolve, reject) => {
+	window.setTimeout(() => {
+		resolve('resolvida');
+	}, 2000);
+});
+
+await myPromisse
+	.then((result) => result + 'passando pelo then')
+	.then((result) => result + 'e agora acabou')
+	.catch((err) => console.log(err.message));
+
+=async e await
+
+async para definir funções assincronoas
+exemplo:
+
+async function ResolvePromise() {
+	const myPromise = new Promise((resolve, reject) => {
+		window.setTimeout(() => {
+			resolve('resolvida');
+		}, 3000);
+});
+	const resolved = await myPromise
+		.then((result) => result + 'passando pelo then')
+		.then((result) => result + 'e agora passou')
+		.catch((err) => console.log(err.message));
+
+	return resolved;
+}
+
+
+== consumindo APIs
+application programming interface
+intermédio entre back-end com front-end
+acesso de tals se dá por meio de dados
+
+json: javascript object notation
+o resultado ou o dado a ser entregue para api's muito comomente se dá em json
+formate de objeto
+{
+objeto
+}
+
+fetch retorna uma promisse
+fetch(url, options)
+	.then(response => response.json())
+	.then(json => console.log(json))
