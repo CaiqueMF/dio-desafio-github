@@ -1,0 +1,70 @@
+=DOM
+o que é o DOM documento object model
+elemento documento com cada um de suas tags filhas (nós)
+
+o BOM é browser object model
+windows das dependencias dentro da janela, o DOM está dentro do BOM
+
+=métodos de manipulação do DOM
+-tags
+-ids
+-classes
+selecionando elementos da página
+
+document.getElementById(id)
+retorna o elemento que possui aquele id
+
+document.getElementsByTagName(tag)
+retorna array de elementos com aquela tag
+
+document.getElementsByClassName(class)
+retorna array de elementos com aquela classe
+
+document.querySelectorAll(.coisa1 .coisa2)
+retorna um array com todas aquelas coisas em comum
+
+para criar um novo elementos HTML
+document.createElement(element)
+
+para remover um elemento
+document.removeChild(element)
+
+para adicionar um elemento
+document.appendChild(element)
+
+para substituir um elemento
+document.replaceChild(new,old)
+
+=trabalhando com estilos
+
+elemento.classList.add(novaClasse)
+elemento.classList.remove(classeAntiga)
+elemento.classList.toggle(classeQueRevesa)
+
+para usar estilo dentro do js:
+
+elemento.style.color = 'novo valor'
+
+
+=eventos
+um evento é qualquer ação feita pelo usuario dentro da página
+eventos de mouse:
+	mouseover (hover)
+	mouseout
+	click
+	dbclick (double click)
+eventos de atualização:
+	change
+	load
+
+acionando eventos
+elemento.addEventListener('tipo de evento', função que o evento ativa)
+
+acionando eventos no html
+<p onclick="função(this)">a</p>
+<script>
+	function função(id) {
+faz alguma coisa
+}
+</script>
+
