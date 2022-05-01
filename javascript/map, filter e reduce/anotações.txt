@@ -1,0 +1,37 @@
+=map
+é analogo ao comportamento da relação entre conjunto na matemática
+/não modifica o array inicial, cria um novo array, faz a implementação na ordem do array original
+sintaxe
+array.map(callback, thisarg)
+callback(item, index, array)
+callback: função a ser executada em cada elemento
+thisarg(opcional): valor de this dentro da função de callback
+
+map vs foreach
+exemplo:
+const array = [1,2,3,4,5]
+array.map((item) => item *2)
+
+const array = [1,2,3,4,5]
+array.forEach((item) => item *2)
+
+map retorna um novo array e for each não
+
+=filter
+cria um novo array a partir de certo filtro
+sintaxe
+array.filter(callback, thisarg)
+exemplo:
+frutas.filter((fruta) => fruta.includes('maçã'))
+
+=reduce
+executa uma função em todos os elementos do array e retorna um valor único
+sintaxe
+array.reduce(callbackfn, initialvalue)
+
+exemplo:
+xonst callbackfn = function(accumulator, currentvalue, index, array) {
+//alguma coisa
+}
+
+array.reduce(callbackfn,initialvalue)
