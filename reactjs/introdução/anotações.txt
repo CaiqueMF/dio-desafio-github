@@ -1,0 +1,55 @@
+= história e conceitos
+uma biblioteca de java script para crira interfaces de usuário
+criada em 2011 por jordan walke no facebook
+baseado em xhp
+2012 - instagram
+2013 - liberação opensource
+2015 - react native
+2015 - UWP
+
+biblioteca/ não framework
+principal função é a criação da interface para o usuário
+
+react é declarativa
+tanto front quanto back end
+
+= configuração
+react create app
+react scripts
+task runners e bundler sizers
+
+= o que é um jsx
+nem html nem string
+
+=ecossistema
+várias ferramentas disponíveis
+
+=webpack
+module bundler empacotador de módulos gera módulo para ser utilizado
+
+- entry
+ponto de entrada dos arquivos
+- output
+onde se dá a saída dos arquivos
+- loarders
+recurso para webpack gerenciar arquivos não js
+- plugins
+utilizados para diversas funcionalidades
+- mode
+utilizado para a abordagem das configurações do webpack
+	production
+	development
+	none
+
+=EsLint
+ferramenta para pradonização e correção de erros
+
+= renderização condicional
+- variáveis de elementos
+- if inlinne com o perador lógico &&
+- ef else inlie com operador condicional
+- evitando que oum coponente seja renderizado
+
+-mock
+-hierarquia de componentes
+-

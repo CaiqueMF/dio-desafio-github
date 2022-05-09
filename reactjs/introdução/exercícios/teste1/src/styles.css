@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 22px;
+}
+
+.teste {
+    color: aquamarine;
+    background-color: black;
+}
