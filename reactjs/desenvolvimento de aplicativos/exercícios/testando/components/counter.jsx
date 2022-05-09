@@ -21,9 +21,10 @@ class Counter extends React.Component {
             </div>
         )
     }
-    function mapStateToProps(state) {
-        return (
-            count: state.count
-        )        
-    }
 }
+function mapStateToProps(state) {
+    return {
+        count: state.count
+    }   
+}
+export default connect(mapStateToProps)

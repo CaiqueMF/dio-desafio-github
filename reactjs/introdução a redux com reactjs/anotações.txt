@@ -1,0 +1,143 @@
+= diferenças entre react e redux
+- react
+biblioteca para construir interfaces
+baseado em componentes
+aprenda uma vez, escreva em qualquer lugar
+
+-redux
+state container, são blocos de sua aplicação que armazena um estado de forma centralizada
+, que pode ser lido por outros blocos da aplicação
+ prevísivel
+ centralizado
+ debugável
+ flexível
+
+contexto por de trás do redux, 2014 (aprentação do flux)
+redux foi futuramente inspirado em cima do flux e elm
+ imutabilidade
+ API declarativa
+ operações determinísticas
+ controlar side-effects (quando nãe se pode evitá-los)
+
+influência da arquitetura flux
+-os três princípios
+	uma única fonte de verdade
+	estado disponível apenas para leitura
+	mudançãs no estado são feitas apenas por funções puras
+
+reducer:
+recebe uma ação e executa como um novo estado
+store.getState()
+exemplo:
+
+function counterReducer( state = {value: 0}, action) {
+	switch( action.type) {
+		case 'counter/incremented':
+			return {value: state.value +1}
+		case 'counter/decremented':
+			return {value: state.valeu -1}
+		default:
+			return state
+	}
+}
+
+store:
+createStore
+const store = createStore(counterReducer)
+
+actions: store.dispatch()
+
+store.dispatch({type: 'counter/incremented'})
+
+view: connect(react-redux)
+ exemplo:
+
+function TodoList({todoList, dispatch}) {
+	return (
+		renderiza alguma coisa
+	)
+}
+
+function mapStateToProps(state) {
+	return {todoLost: state.todos.allIds}
+}
+
+export default connect(mapStateToProps(TodoList)
+
+function mapDispatchToProps (dispatch) {
+	return {
+		toggleTodo: (id) => dispatch({type: 'todos/toggle', payload: id}),
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList)
+
+selectors
+
+=Middlewares
+função que retorna função que retorna outra função
+
+type MiddlewareAPI = { dispatch: Dispatch, getState: () => State}
+type Middleware = (api: MIddlewareAPI) => (next: Dispatch) => dispatch
+
+exemplo:
+function logger({ getState}) {
+	return next => action => {
+		console.log('will dispatch', action)
+		const returnValue = next(action)
+		console.log('state after dispatch', getState())
+		return returnValue
+	}
+}
+
+enhanced stores
+
+alternativas para state containers
+context API (react)
+recoil (FB)
+MobX (redux-saga, RxJS)
+XState
+
+
+prós e contras de state containers
+prós
+	simplifica problemas de data-flow complexos
+	pontos únicos de controle de estado
+contras
+	complica problemas de data-flow simples
+
+conclusão
+	super poderoso, mas pode ser custoso
+	super extensível, mas precisa de clareza
+	state containers resolvem problemas não triviais
+	flexível para resolver vários problemas, mas talvez não o seu
+	propósito de redux é muitod diferente do react, e pode ser usado em outras soluções
+
+=devtools
+yarn start
+time travel
+
+boas práticas
+redux style guide
+	priority a: essential 
+	priority b: strongly recommended
+	priority c: recommended
+
+A:
+do not mutate state/ não modifique estado
+reducers must not have side effects
+do not put non-serializaded values in state or actions
+only one redux store per app
+
+ducks pattern
+pensar em módulos
+1 must export default a function called reducer()
+2 must exort its action creators as functions
+3 must have action types in the form npm-module-or-app/reducer/ACTION_TYPE
+4 may export its action types as UPPER_SNAKE_CASE, if an external reducer needs to listen for them, or if it is a published reusable library
+
+higher-order-reducers
+
+component containers
+
+hooks
