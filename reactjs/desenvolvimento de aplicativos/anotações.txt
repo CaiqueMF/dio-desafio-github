@@ -1,0 +1,241 @@
+=stateful/stateless
+- stateful
+possui gerenciamewnto de estados no componente
+geralmente com o uso de classes
+ 
+=formulários
+mantêm o estado interno
+	-componente controlado
+	o estado é o react, usando o atributo value
+
+	-componente não controlado
+	react vai somente observar o estado
+
+=flux
+padrão de projeto para tráfego de dados de maneira uniderecional
+
+action - formata a mensagem a ser enviada
+dispatcher - redireciona a action para a store correta
+store - guarda todos os estados e altera os estados
+view - nível entre store e a tela, recebe os estados
+
+serve pra comunicação entre componentes e centraliza informação
+
+=redux
+implementação de flux
+	react, action, store, reducer
+3 princípios
+- single source of truth, única store
+- state é read-only
+- mudanção são feitas com pure functions
+
+actios
+as actions só retornam um objetos
+store
+cuida de todas as árvores de estados
+reducer
+cuida de descobrir quais estados mudaram (root reducer)
+views
+	provider
+	connect()
+	selector
+
+=APIs http
+-get
+-post
+-delete
+-put
+fetch
+axios
+
+fetch API
+	nativa do browser
+alternativa a XMLHttpRequest() e JQuery.ajax()
+suporte a service workers
+não envia nem recebe cookies
+não rejeita o status do erro HTTP
+
+get com fetch API
+exemplo:
+fetch(url)
+.then(response => response.json())
+.then(data => {
+faz o q quiser aqui
+}.catch(error => {
+mensagem de erro, etc}
+)
+
+post com fetch API
+fetch(url, {method: 'post', body: JSON.stringify(coisa a ser postada)})
+.then(response => response.json())
+.then(data =>{
+faz o que quiser})
+.catch(erro => {mensagem de erro})
+
+delete com fetch API
+fetch(url, {method: 'delete'})
+.then(response => response.json())
+.then(data => {
+faz o que quiser})
+.catch(error => {
+mensagem de erro})
+
+put com fetch 
+fetch(url, {method: 'put', body: JSON.stringify(dado a ser alterado)})
+.then(data => {
+faz o que quiser})
+.catch(error => {
+mensagem de erro})
+
+Axios
+cross-browser
+pode monitorar progresso
+melhor tratamento de erros e teste
+	yarn add axios
+exemplo de get axios
+import axios from 'axios'
+axios.get('url')
+.then(data => {
+faz o que quiser})
+.catch(error => {
+mensagem de erro})
+
+exemplo de post com axios
+import axios from 'axios'
+axios.post(url, {conteudo: de forma direta})
+.then(data => {
+faz o que quiser})
+.catch(error => {
+mensagem de erro})
+
+exemplo de delete com axios
+import axios from 'axios'
+axios.delete(url)
+.then(data => {
+faz o que quiser})
+.catch(error => {
+mensagem de erro})
+
+exemplo de put com axios
+import axios from 'axios'
+axios.put(url, {conteudo: de forma direta})
+.then(data => {
+faz o que quiser})
+.catch(error => {
+mensagem de erro})
+
+
+=imutabilidade
+uma vez criada uma coleção não pode ser alterada
+novas coleções podem ser criadas a partir de coleções anteriores
+	performance
+	mais simples
+	debugging mais simples
+imutabilidade e react
+	shouldComponentUpdate
+	React.PureComponent
+
+exemplo de código
+
+class CounterButton extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = {count: 1}
+	}
+
+	shouldComponentUPdate(nextProps, nextState) {
+		if (this.props.color !== nextProps.color) {
+			return true
+		if (this.state.count !== nextState.count_ {
+			return false
+		}
+		return false
+	}
+	render() {
+		return (
+			
+		)
+	}
+}
+
+
+exemplo usando purecomponent
+
+class CounterButton extands React.PureComponent {
+	contructor(props){
+		super(props)
+		this.state = {count: 1}
+	}
+	render() {
+	return (
+		<button
+			color = {this.props.color}
+			onClicl={() => this.setState(state => ({count: state.count + 1}))}>
+			Count: {this.state.count}
+		</button>	
+		)
+	}
+}
+
+=imutabilidade e redux
+redux e react redux utilizam comprações rasas
+manipulação de dados mais segura
+
+
+
+=redux + rest
+Middlewares
+provê uma camada entre o dispare de uma ação e o momento que ela atinge o reducer
+
+redux thunk
+yarn add redux-thunk
+
+=tdd e bdd
+tdd
+test driven development
+escrever um código para testar um código 
+- escreve teste que falha
+- fazer o código funcionar
+- eliminar redundancia 
+	teste unitário
+	teste end-to-end (e2e)/ ponta a ponta
+jest *
+react-testing-library
+shallow
+enzyme
+chai
+mocha
+selenium
+puppeteer
+
+jest usa jasmine
+
+teste de soma em jasmine
+import função from 'local da função'
+
+describe('nome do teste', () => {
+	if('o que se espera', ()=>{
+		const res = função(a, b)
+		expect(res).toBe(resultadoesperado)
+	})
+})
+
+teste de componente react
+react-testing-library
+	yarn add --dev @testing-library/react
+	yarn add --dev @testing-libraby/jest-dom/extend-expect
+
+bdd
+behavior driven development
+sintaxe gherkin
+jest-cucumber
+chai
+yarn add --dev jest-cucumber
+
+=debugging
+reduzir os defeitos
+-chrome devtools
+-redux devtools
+-react devtools
+
+=tratamento de erros

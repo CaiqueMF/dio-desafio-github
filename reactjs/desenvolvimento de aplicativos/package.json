@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@testing-library/react": "^13.2.0",
+    "jest-cucumber": "^3.0.1"
+  }
+}
