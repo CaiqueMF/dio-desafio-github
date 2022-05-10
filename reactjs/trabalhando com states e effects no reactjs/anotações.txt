@@ -1,0 +1,6 @@
+=hooks /ganchos
+função que se engancha em um componente
+usestate/useeffet
+
+-boas práticas
+usar componentes na pasta components
