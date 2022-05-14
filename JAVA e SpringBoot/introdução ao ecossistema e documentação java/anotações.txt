@@ -1,0 +1,240 @@
+= entendendo o java
+	compilada
+	interpretada
+	fortemente tipada
+	linguagem de alto nível
+	executada em uma máquina virtiual (java virtual machine)
+
+o arquivo é compilado para uma um executável bytecodes (.class) que é interpretado pelo java
+
+= jvm
+java virtual machine
+machina virtual responsável pela traduçã dos bytecodes oriundos do compilador javac em código de máquina de cada sistema operacional
+características:
+	execução de pilhas
+	gerenciamento de memória
+	gerenciamento de threads
+	otimização de código (compilação jit - just in time)
+	garbage collector (gc)
+em linguagens como C o compilador é responsável por fazer o arquivo executável em cada sistema operacional
+no java pelo outro lado o compilador só é responsável por gerar o exercutável em bytecodes e o java em si é responsável por fazer ele executar em cada sistema operacional
+
+JRE vs JDK
+JRE é responsável por executar os programas java
+
+JDK utilitários que permite o desenvolvimento de programas em java
+
+plataformas do java
+Java SE/Java EE/ Java ME
+
+Java SE
+	OpenJDK
+	Oracle JDk
+	AdoptOpenJDK
+	Amazon Corretto
+	GraalVM CE
+	Azul Zulu
+
+palavras reservadas
+	abstract
+	assert
+	boolean
+	break
+	byte
+	case
+	catch
+	char
+	class
+	const
+	continue
+	default
+	do
+	double
+	else
+	enum
+	extends
+	final
+	finally
+	float
+	goto
+	if
+	...
+
+declaração de classe
+modificador de acesso - class - Nome
+estrutura vazia
+
+public class Order {
+
+}
+
+estrutura com atributos e métodos
+public class Order {
+	//atributos
+	private final String code;
+	private final BigDecimal totalValue;
+	//acesso       - tipo   - nome do atributo
+	
+	//metodos
+	public BigDecimal calculateFee(){
+	
+	}
+}
+
+exemplo de estrutura completa de uma classe no java
+
+package com.dio.base;
+import java.math.BigDecimal;
+
+public class Order {
+
+	private final String code;
+	privatefinal BigDecimal totalValue;
+	
+	public Order(String code, BigDecimal totalValue) {
+		this.code - code;
+		this.totalValue = totalValue;
+	}
+	
+	public BigDecimal calculateFee(){
+		return this.totalValue.multiply(new BigDecimal("0.99));
+	}
+}
+
+
+=modificadores de acesso
+público - public
+	qualquer classe de qualquer pacote poderá acessar o atributo ou método
+protected
+	qualquer classe definida no mesmo pacote ou subclasse pode acessar
+sem modificador
+	apenas classes definidas no mesmo pacote terão acesso
+private
+	apenas a própria classe pode acessar
+
+=métodos
+funções que definem o comportamento de uma classe
+métodos construtores
+	definem como uma classe será construida
+métodos comum
+	definem comportamentos que podem ou não estar atribuídas às regras de negócio
+
+=estrutura de condição
+if - else
+exemplo if - else
+
+public class Order{
+	private final double totalValue;
+	
+	public double caculateFee(){
+		if(this.totalValue > 100){
+			return this.totalValue  0.99;
+		}else {
+			return this.totalValue;
+		}
+	}
+}
+
+switch - case
+
+switch(this.totalValue){
+	case 100;
+		return totalValue * 0.99;
+	case 200;
+		return totalValue * 1.99;
+	default;
+		return totalValue;
+}
+
+=estrutura de repetição
+while
+do while
+for
+enhanced for
+
+exemplo while;
+int i = 0;
+while(i < lista.length){
+	system.out.println(lista[i]);
+	i++;
+}
+
+
+exemplo do while
+int i = 0;
+do{
+	system.out.println(lista[i]);
+	i++;
+}while(i <lista.length)
+
+
+exemplo for
+for(int i =0; i<lista.length; i++){
+	system.out.println(lista[i])
+}
+
+
+exemplo enhanced for
+for(String i: lista){
+	system.out.println(i)
+}
+
+
+=comentários em linha
+//comentário
+
+=comentários em bloco
+/**
+*comentário
+*em bloco
+*/
+
+=javadoc
+é uma ferramenta para documentação no formato html que se baseia nos comentários do código-fonte
+os comentários pecisam conter tags para que a documentação fique legível
+
+=tipos de tags javadoc
+@autor especifica o autor da classe ou do método
+@deprecated indentifica classes ou métodos obsoletos
+@link possibilita a definição de um link para outro documento local ou remoto
+@param desqcreve um parâmetro que será passado a um método
+@return descreve qual o tipo de retorno de um método
+@see associa a outras classes cou métodos
+@since descreve desed quando uma classe ou método foi adicionado
+@throws descreve os tipos de esceções que podem ser lançadas por um método
+@version descreve a versão da classe ou método
+
+=comunidae java
+	opensanca
+	soujava
+	devopspbs
+
+=carreira
+é importante especializar em uma área
+focar uma plataforma de desenvolvimento
+
+=mercado
+mercado para TI está aquecido
+o mercado está em falta de profissionais qualificados
+
+=requisitos de profissionais java
+desenvolver hard e soft skills
+atualmente a maior prioridade é a soft skill
+
+exemplos de soft skill
+	resolução de problemas complexos
+	pensamento crítico
+	criatividade
+	gestaão de pessoas
+	coordenação em equipe
+	liderança
+
+exemplos de hard skills
+	springboot
+	spring cloud
+	apache kafka
+	rabbitmq
+	arquitetura cloud
+	bonco de dados relacional e nção relacional
+
+
