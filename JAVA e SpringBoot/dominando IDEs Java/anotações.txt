@@ -1,0 +1,35 @@
+=história do java
+linguagem orientada a objetos desenvolvida em 90's
+(orientação a objeto)
+plataforma adotada mais rapidamente na história da computação
+-linguagem interpretada
+
+programa java -> compilador -> programa class -> jvm -> executável
+
+java é a linguagem da prataforma java, mas não a única
+vantagem do java é estar independende do hardware, pois roda em uma máquina virutal
+Java SE/Java EE/ Java ME
+
+código.java -> JDK -> código.class -> JVM
+
+JDK vs JRE
+JDK (Java Development Kit)
+	é o kit de Desenvolvimento Java responsável por compilar código fornte .java em bytecode .class
+JVM (JAva Virtual Machine)
+	é  a máquina virtual do java responsável por executar o bytecode .class
+JRE (Java Runtime Environment)
+	ambiente de execução do java que forcnece as bibliotecas padrões do java para o JDK
+
+=versões do java
+principal diferença entre OpenJDK e JDK é: o primeior é open source enquanto o segundo requer uma licença
+
+os lançamentos das versões do OpenJDK LTS
+
+=IDE
+é um sofware que combina ferrametne numa interface gráfica facilitante o desenvolvimento
+o java possui um conjunto de ferramentar para desenvolver baseados nele, Java Development Kit ou JDK.
+
+	Eclipse
+	Intellij
+
+ 
