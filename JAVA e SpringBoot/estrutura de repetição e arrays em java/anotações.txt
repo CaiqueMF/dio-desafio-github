@@ -1,0 +1,12 @@
+=visão geral
+uma estrutura de repetição permite que uma sequência de comando seja executada repetidamente, caso determinadas condições sejam satisfeitas;
+tipos:
+	com testo no início (while)
+	com teste no final (do while)
+	com repetição contada (for)
+
+continue volta para o teste e ignora o restante
+
+=arrays
+objeto usado pra armazenar sequencialmente dados do mesmo tipo
+tamanho fixo
