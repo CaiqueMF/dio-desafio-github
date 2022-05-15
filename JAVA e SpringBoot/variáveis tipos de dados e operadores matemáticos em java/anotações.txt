@@ -1,0 +1,5 @@
+=conversões / casting
+	upcast
+exemplo: L = i
+	downcast
+exemplo: i = (int) L
