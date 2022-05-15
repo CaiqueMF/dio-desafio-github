@@ -1,0 +1,63 @@
+=operadores relacionais
+são símbolor especiais capazes de realizar comparações entre determinados operandos e em seguida retornar um resultado
+tipos:
+	similaridade: igual/ diferente
+	tamanho: maior/maior igual/ menor/ menor igual
+utilizando operadores relacionais de similaridade
+
+== igualdade
+!= diferença
+
+tamanho:
+>
+>=
+<
+<=
+
+=operadores lógicos
+são simbolos capazes de realizar comparações lógicas entre operando lógicos ou expressões e em seguida retornando um resultado
+tipos
+	conjunção
+	disjunção
+	disjunção exclusiva
+	negação
+
+conjunção/ e (and)
+a && b
+
+disjunção/ ou (or)
+a || b
+
+disjunção excluisva/ xor
+a ^ b
+
+negação
+!a
+
+=controle de fluxo
+são estruturas capazes de direcionar o fluxo de execução do código
+tipos:
+decisão:
+	if
+	if-else
+	if-else-if
+	switch
+	operador ternário
+repetição:
+	for
+	while
+	do while
+interrupção:
+	break
+	continue
+	return
+
+operação ternário
+condição? true:false;
+
+=blocos
+é um grupo de 0 ou mais códigos
+tipos:
+	locais
+	estáticos
+	instância
