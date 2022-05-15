@@ -1,0 +1,42 @@
+=método
+é uma porção de código que é disponibilizada por uma classe, é executado quando é feita uma requisição deste
+
+visibilidade(?) tipo(?) modificiador(?) retorno nome parâmetros(?) exceções(?) corpo
+
+v - public, prtected, ou private
+t - concreto ou abstrato
+m - static ou final
+r - tipo de dado ou void
+n - nome que é fornecido ao método
+p - parâmetro que pode receber
+e - exceções que pode lançar
+c - código que possui ou vazio
+
+exemplo:
+public String getNome(){...}
+
+como chamar método
+nome_da_classe.nomeDoMétodo(...);
+nome_do_objeto.nomeDoMétodo(...);
+
+=particularidades
+assinatura de método: nome + parâmetros
+método: public double calcularTotalVenda(double a, double b){...}
+
+assinatura:
+calcularTotalVenda(double a, double b)
+
+construtor e destrutor: são métodos especificos para criar e destruir objetos
+
+mensagem: é o ato de solicitar um método
+
+passagem de parâmetros:
+	por valor (cópia)
+	por referência (endereço)
+
+=sobrecargas
+métodos para diferentes contextos preservando seu nome
+mudando a assinatura de método
+sobrecarga x sobrescrita
+
+=return
