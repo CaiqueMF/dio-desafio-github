@@ -1,0 +1,21 @@
+=tratamento de exceções
+- exceção
+exceção é um evento que interrompe o fluxo normal do processametno de uma classe
+o uso correto de exceções torna o programa mais robusto e confiável
+com o tratamento de esceções, um programa pode continuar executando depois de lidar com um problema
+importante: incorpore sua estrátegia desde o início
+classificações de execeção:
+error:
+	usado pela JVM que serve para indicar se existe algum provlema de recurso do programa, tornando a execução impossível de continuar
+unchecked (runtime)
+	exceptions que podem ser evitados se forem tratados e analisador pelo desenvolvedor
+checked exception:
+	execeptions que devem ser evitados e tratados pelo desenvolvedor para o programa funcionar
+
+todas as exections exceto a runtimeexception precisam ser tratadas
+
+hierarquia das exceções
+
+-try, catch e finally
+throws
+throw
