@@ -1,0 +1,137 @@
+=por que
+PE vs POO
+paradgma estruturado tem uma representação mais simplista
+paradgma orientada a objeto tem uma representação mais realista
+paradigma estruturado foca em operações e dado
+estrutrado-> como fazer
+orientada -> o que fazer
+
+vantagens da POO
+melhor coesão
+melhor acoplamento
+diminuição do gap semântico
+coletor de lixo
+
+definição de OO
+baseado na composição e interação entre diversas unidades de software chamadas de objetos
+
+fundamentos
+	abstração
+processo pelo qual se isolam caractéristicas de um objeot, considerando os que tenham em comum certos grupos de objetos
+	reuso
+capacidade de criar novas unidades de código a partir de outras já existentes
+	encapsulamento
+capacidade de esconder complexidades e proteger dados
+entidade livro:
+	título, autor, ano, páginas
+
+=estrutura
+-Classe
+tudo na orientação de OO é classe
+éuma estrutura que abstrai um conjunto de objetos com características similares. uma classe define o comportamento de seus objetos através de métodos e os estados possíceis destes objetos através de atributos.
+exemplos:
+bola, venda, carro, viagem, computaodr, comparador
+
+dicas de classes:
+substantibvos
+nomes significativos
+contexto deve ser considerado
+
+classe em java
+class nome {
+
+}
+
+
+-atributo
+elemento de uma classe responsável por definir sua estrutra de dados. o conjunto destes será responsável por representar suas características e fará parte dos objetos criador a partir da classe
+atributo x variável
+A: o que é próprio e peculiar a algúem ou a alguma coisa
+V: sujeito a variação ou mundanças, que pode variar, inconsctante, instável
+
+dicas de atributos:
+substantivos e adjetivos
+nomes significativos
+contexto deve ser considerado
+abstração
+tipos adequados
+
+class Nome {
+	Int Atributo;
+}
+
+-método
+é uma porção de código(sub-rotina) que é disponibilizado pela classe.´este é oexecutado quando é feita uma requisição para tal.
+criação de método em java
+- visibilidade
+- retorno
+- nome
+- parâmetros
+
+dica de métodos:
+verbos
+nome significativo
+contexto deve ser levado em consideração
+
+exemplo:
+class Nome {
+	Int Atributo;
+	Void método(){
+	}
+}
+
+dois métodos especiais
+construtor
+destrutor
+
+construtor:
+class Nome {
+	Nome(){
+	}
+}
+
+destrutor:
+class Nome {
+	void finalize(){
+	}
+}
+
+sobrecarga
+mudar a assinatura de acordo com a necessidade
+
+-objeto
+um objeto é a representação de um conceito/entidade do mundo real, que pode ser física (bola, carro, árvore, etc) ou conceitual (viagem, estoque, compra, etc) e possui um significado bem definido.
+criação de objeto em java
+Nome nome = new Nome();
+
+mensagem
+é o processo de ativação de um método de um objeto. isto ocoquando uma requisiçaõ a esse método é realizada, assim disparando a execução de seu comportamento descrito.
+nome.método;//objeto
+Nome.método;//classe
+
+=herança
+é o relacionamento entre classes em que uma clase chamade de subclasse é uma extensão, um subtipo, de outra classe chamada de superclasse. devido a isto, a suclasse consegue reaproveitar os atributos e métodos dela.
+como declarar herança em java
+
+class Filha extends Nome {
+
+}
+
+tipos de herança
+simples
+múltiplas (não tem em java)
+
+-upcast subir na hierarquia de classe
+-downcast descendo na hierarquia de classe
+upcast em java
+A a = new B();
+downcast em java
+B a = (B) new A();
+
+-polimorfismo
+a mesma ação se comportando diferente
+-sobrescrita
+a mesma ação, podendo se comportar diferente
+polimorfismo x sobrescrita
+
+
