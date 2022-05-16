@@ -1,0 +1,9 @@
+=debugging
+-ajeitar bugs
+erro de sintaxe
+	parânteses, chaves, colchetes
+	ponto e vírgulo
+	palavra chave
+erros de semântica
+
+Thread.dumpStack();	

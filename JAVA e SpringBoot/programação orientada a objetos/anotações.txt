@@ -134,4 +134,59 @@ a mesma ação se comportando diferente
 a mesma ação, podendo se comportar diferente
 polimorfismo x sobrescrita
 
+=associação
+possibilita um relacionamento entre classes e objetos, no qual estes possam pedir ajuda a outras clases e objetos
+tipos:
+-estrutural
+-comportamental
 
+estrutural
+composição: "com parte todo"
+exemplo em java
+pessoa/endereço da pessoa
+class Pessoa {
+	Endereco endereco;
+}
+
+agregação: "sem parte todo"
+aluno/disciplina
+class Disciplina{
+	Aluno aluno;
+}
+
+comportamental: "depende de"
+compra/cupom
+class Compra {
+	finalizar(Cupom cupom){
+	}
+}
+
+=interface
+define um contato que deve ser seguido pela classe que a i implementa. qunado uma classe implementa uma interface, ela se compromete a realizar todas os comportamentos que a interface disponibiliza.
+java
+interface A {
+
+}
+
+class B implements A {
+
+}
+
+=pacotes
+são uma orgaização física ou lógica criada para separar classes com resposabilidades distitas. com isso, espra-se que a aplicação fique mais orgaizada e seja possível seprara classes de fialidades e represetatividades diferentes
+package ...;
+import ...;
+
+=visibilidade
+um modificar de acesso tem como finalidade determinar até que ponto uma classe atributo ou método pode ser usado. a utilização de modificacdores de acesso é fundamental para o uso efetivo da orientaçção a objetos.
+tipos
+	private
+	protected
+	public
+java:
+private
+somente dentro daquela classe será acessada
+protected
+dentro da classe, mesmo pacote e subclasses
+public
+em qualquer lugar
