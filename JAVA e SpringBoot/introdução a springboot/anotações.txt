@@ -51,3 +51,16 @@ simulação de ambiente de teste
 spring boot profilese
 configurações próprias para cada ambiente
 ambientess com sua connfiguração: dev, production
+
+=====
+configurações com yaml
+troca formato de configação com formato .yml
+
+configurações com command line
+propriedados do arquivo de configuração n alinha de comando
+sobrescreve as propriedades definidasa no arquivo de configuração padrão 
+
+====
+configurações com variável de ambiente
+padrão de variável de ambiente
+@Value ({NOME_VARIAVEL})
