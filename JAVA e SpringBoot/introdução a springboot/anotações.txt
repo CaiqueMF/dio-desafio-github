@@ -1,0 +1,53 @@
+o que é o springboat
+- configurações de beans em arquivos xml
+- dispatcher servlet e view resolver em web.xml
+- setup manual de banco de dados
+- muito tempo gasto em configuração
+- perda de foco em valor
+
+criado pela spring source em 2012
+facilita o setup de projetos spring
+sem necessidade de criar arquivos de configuração
+foco em produtividade
+
+produtividade: setup simplificado do projeto
+spring initializr
+dependencias do spring são os starters
+execução simplificada sem deploy em servidor externo
+
+maior tempo em desenvolvimento
+
+
+=====
+auto configuration
+antes:
+	múltiplos arquivos xml
+	configuração manual do spring mvc: dispatcher, servlet, web, spring mvc
+	configuração manual do beans spring
+
+starters:
+dependências simplificadas e auto configuráveis
+
+spring boot detecta as dependências e configura para o desenvolvedor
+
+=====
+FatJar/UberJar
+antes havia a dependência de um container web ou servidor de aplicações, complexidade para configurações, atualizações frequentes, junto com versões do projeto
+
+artefato do projeto pronto para execução, container web embutido na geração e execução (tomcat)
+deploy embarcado com outros containers são opcionais
+
+mvn packagge && java -jar target/spring-boot-exemple-....jar
+
+
+=====
+profiles
+
+geralmente existem diversos tipos de ambientes
+bancos de dados para cada ambiente
+execução de testes unitários em ambiente local
+suíte de testes completas em ambiente de teste
+simulação de ambiente de teste
+spring boot profilese
+configurações próprias para cada ambiente
+ambientess com sua connfiguração: dev, production
