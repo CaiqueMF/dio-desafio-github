@@ -1,0 +1,66 @@
+=spring framework
+
+-plataforma spring
+é uma plataforma com diversos recursos para construção de softwares java
+- data access
+- web
+- core container
+- test
+- AOP
+- Aspects
+- Instrumentation
+- messaging
+
+= beans
+são um objeto intanciado mostrado gerenciado por um container do spring através de inversão de controle (IoC) e injeção de dependências(DI)
+configurando beans com arquivo xml ou através de anotações
+<bean>
+
+beanfactory ou application context
+são interfaces na hora de confiurar um baen
+
+=inversão de conterole
+é um processo onde se inverte o fluxo de comando de um program, descopla ou remove dependências do objeto e fornecer controle para outra camada
+
+= injeção de depndência
+define quais classes serão instanciadas e onde serão injetadas quando for necessário existem três formar de aplicar o DI< por injeção de construtor
+
+=spring boot
+spring é uma extensão do spring que utiliza do spring framework para iniciar uma aplicação de forma simples, rápida, sem se preocupar com configurações complexas ccomo tomvar, 
+spring boot starter
+spring boot auto-configuration
+spring boot actuator
+
+- como funcio ao spring boot
+é como um template pré configurado para desenvoliv,emtp e execução de aplicações vaseadas no spring
+spring boot perdimie adicionar estrura base o que é chamado de módulo
+spring framewokr + servidor embutor + xml
+spring framework + spring framework(test)
+
+motivação do spring boot
+é feito para facilitar a vida de um desenvolverdor djava e melhorar a produtividade do desenvolvmento de softwares o spring boot facilita todo esse processo, fazendo com que o desennvolvedor se concentre no software
+
+
+=spring initializr
+fornece uma api extensível para gerar projetos baseados me JVM
+
+=autoconfiguration
+configura altomaticamente projeto spring com base nas dependências jar que adicionamos ao projeto
+para habilitar o recurso existe a anotação @enableautoconfiguration
+@springbootapplication
+
+=swagger
+projeto open souce com diversas ferramentas utilizadas para desenvolver apis com especificação open api specification, uma especificação para descrever, prosduzir...
+-spring-fox
+
+=feign
+é um clente de senrviço web declarativo cliente HTTP desenvolvido pela netflix e um dos mais populares do wspring cloud component. com ele é possível criar elementos API HTML
+
+=spring boot test
+o spring boot facilita o desenvolvimento de testes de unidade e integração com o spring boot teste, um recurso bastante utilizado inno deesnvolvimento de aplicação java para testar comportamentos do código e regras do negócio. para utlizamos precisamos usar o spring-boot=starter-test
+em desenvolvimento de software, os errros podem aparecer me qualquer etapa do ciclo de vida do projeto. com isso, o teste de um software se torna essencial.
+
+=testes unitários
+os testes unitários é a base da pirâmide de testes onde são realizados os maior número de testes ou deveria para ganrantir a fidelidade do código e regras do negócio
+@springbootteste
+a notação @springbootteste é utilizada em uma classe de teste e diz ao spring boot para procurar uma classe de configuração principal, por exemplo, o @springbootapplication...
