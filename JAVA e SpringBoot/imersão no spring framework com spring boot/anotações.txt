@@ -1,0 +1,119 @@
+=fundamentos de spring framework
+- o que é o spring framework
+- sping versus java ee
+- conceito de inversão de controle
+- injeção de dependencias
+
+- spring framework
+framework open source desenvolvido para a plataforma java baseado no s padrões de projeto inversão de controle e injeção de dependencias
+
+- spring versus java ee
+olhando um ouco a história, há muito, mas muito tempo atrás, o java ee era realmetne mauito mais complicado e nem era necessário entrar numa discusão
+
+- inversão de controle
+inversio of control ou IoC, trata-se do redirecionamento do fluxo de execução de um código retirando parcialmente o controle sobre ele e delegando-o paar um container
+
+- injeção de dependencias
+injeção de dependência é um padrão de desenvolvimentocom a finalidade de manter baixe o nível de acoplamento entre módulos de um sistema
+
+-beans
+objeto que é instanciado(criado), montado e gerencidado por um container
+
+-scopes
+singleton, prototype, HTTP (request, session, global)
+
+- singleton
+o contêiner do spring IoC define apenas uma instância do objeto
+
+-prototype
+será criado um novo objeto a cada solicitação ao container
+
+-HTTP request
+um bean será criado para cada requisição HTTP (existe enquanto a requisição estiver em execução)
+
+-HTTP session
+um bean será criado para a sessão de usuário
+
+- HTTP global
+ou application scope cria um bean para o ciclo de vida do contexto da aplicação
+
+-autowired
+uma anotação(inficação) onde deverá ocorrere uma injeção automática de dependência.
+	byname
+	bytype
+	byconstructor
+
+
+====springboot
+springboot
+enquanto o spring framework é baseado no padrão de injeção de dependências, o springboot foca na configuração automática
+
+- antes do springboot
+desafios com a configuração do projeto
+dependência individual
+verbosidade
+imcompatibilidade de versões
+complexidade de gestão
+configurações complexas e repetitivas
+
+dado aque a maior parte das configurações dnecessárias para o início de um pejoto são sempre as mesmas, porque não iniciar com elas definidas
+
+-starters
+decritores de dependência
+
+benefícios:
+	coesão
+	versões compatíveis
+	otimização do tempo
+	configuração simples
+	foco no negócio
+alguns starters
+-spring-boot-starter-
+data-jpa
+data-mongodb
+web
+web-services
+batch
+test
+openfeign
+actuator
+
+
+=bens vs components
+quando usar @Bean?
+quando usar @Component?
+implementar IoC e DI
+
+
+=scope
+
+=properties value
+- o poderoso application.properties
+@Value
+Default value
+
+- configuration porprieties
+o poderoso application.properties
+@ConfigurationProperties (prefix)
+
+=JPA
+conceito de ORM e JPA
+
+-ORM
+object relational mapping, em português, mapeamento objeto-relacionalm, é um recurso para aproximar o paradigma da orientação ea objetos ao contexto de banco de dados relacional, o uso de ORM é realizado através do mapaeamento de objeto para uma tabela por uma bibliote ca ou framework
+-JPA
+é uma especificação beaseada em interfaces, que através de um framework realiza operações de persistência de objetos em java.
+	hibernate
+	top link
+	eclipse link
+	open jpa
+
+mapeamento
+	identificação
+	definição
+	relacionamento
+	herança
+	persistência
+
+- spring data JPA
+
